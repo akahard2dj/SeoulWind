@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" rel="stylesheet" type="text/css"/>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        #map-canvas {
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map-canvas"></div>
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+    <script src="https://rawgit.com/Leaflet/Leaflet.heat/gh-pages/dist/leaflet-heat.js"></script>
+    <script src="{{ url_for('static', filename='L.D3SvgOverlay.min.js') }}"></script>
+    <script>
+        //http://bl.ocks.org/xEviL/0c4f628645c6c21c8b3a
+        var map = L.map('map-canvas').setView(center=[37.5651, 126.9895], zoom=12);
+        var tiles = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+	                        attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+            });
+        tiles.addTo(map);
+
+
+        d3.json("/static/pminfo.json", function(error, pminfo) {
+            var items = [];
+            for (var i=0; i<pminfo.DATA.length; i++) {
+                var item = [pminfo.DATA[i].lng, pminfo.DATA[i].lat, pminfo.DATA[i].PM25];
+                items.push(item);
+            }
+            var heat = L.heatLayer(items, {
+                radius: 50,
+                blur: 100,
+                maxZoom: 11
+            }).addTo(map);
+        });
+
+
+    </script>
+</body>
+</html>

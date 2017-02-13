@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Map" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="utf-8"/>
+    <title>서울 바람</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='test_air.css') }}"/>
+</head>
+<body>
+
+    <!--
+    <div id="display" data-topography="{{ url_for('static', filename='seoul_topo.json') }}"
+                      data-type="wind" data-date="" data-samples="{{ url_for('static', filename='data/obs-2.json') }}">
+    -->
+    <div id="display" data-topography="{{ url_for('static', filename='seoul_topo.json') }}"
+                      data-type={{ data_type }} data-samples={{ data_sample }}>
+        <div id="map">
+            <svg id="map-svg" xmlns="http://www.w3.org/2000/svg" version="1.1"></svg>
+        </div>
+        <div id="field">
+            <canvas id="field-canvas"></canvas>
+        </div>
+        <div id="overlay">
+            <canvas id="overlay-canvas"></canvas>
+        </div>
+
+        <div id="details">
+            <h1 id="type">서울 바람</h1>
+        <span>Overlay | </span>
+            <span class="text-button" id="wind">None</span><span> / </span>
+            <span class="text-button" id="temp">Temp</span><span> / </span>
+            <span class="text-button" id="hum">Hum</span><span> / </span>
+            <span class="text-button" id="so2">SO<span class="sub">2</span></span><span> / </span>
+            <span class="text-button" id="co">CO</span><span> / </span>
+            <span class="text-button" id="pm25">PM<span class="sub">2.5</span></span><p></p>
+
+    	</div>
+	</div>
+
+    <script src="{{ url_for('static', filename='js/require.v2.3.2.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='test_air_config.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='test_air.js') }}" charset="utf-8"></script>
+
+</body>
+</html>
