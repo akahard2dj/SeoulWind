@@ -10,7 +10,7 @@ We are really want to know the intuitive information.
 
 This site and github focuses the needs.
 
-![SeoulWind] (https://github.com/akahard2dj/SeoulWind/blob/master/image/SeoulWind_Page.png)
+![SeoulWind] (https://raw.githubusercontent.com/akahard2dj/SeoulWind/master/image/SeoulWind_Page.png)
 
 ### Overlay
  - Wind, Temperature, Humidity, SO2, CO, PM2.5
