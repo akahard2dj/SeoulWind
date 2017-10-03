@@ -10,7 +10,6 @@ We are really want to know the intuitive information.
 
 This site and github focuses the needs.
 
-Seoul Wind
 <img src="https://raw.githubusercontent.com/akahard2dj/SeoulWind/master/image/SeoulWind_Page.png">
 
 ### Overlay
