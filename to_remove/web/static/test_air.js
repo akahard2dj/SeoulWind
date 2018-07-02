@@ -1,4 +1,4 @@
-(require(["when", "jquery", "d3", "topojson", "mvi"], function() {
+(require(["when", "jquery", "d3", "topojson", "to_remove/web/static/mvi"], function() {
     "use strict";
 
     var tau = 2 * Math.PI;
