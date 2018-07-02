@@ -32,8 +32,7 @@ This site and github focuses the needs.
 ### Modules
  - DB Engine : SQLite3
  - Web Server Language : Python 3.5
- - Web framework : [flask](http://flask.pocoo.org/)
- - Template : [Jinja2](http://jinja.pocoo.org/docs/2.9/)
+ - Web framework : [django 2.0](https://www.djangoproject.com)
  - [D3](https://d3js.org/)
  - when.js
  - topojson.js
