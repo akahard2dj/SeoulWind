@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: #686868;
+}
+
+svg circle {
+    fill: #fff148;
+    opacity: .7;
+    stroke: #fff148;
+}
+
+svg circle:hover {
+    fill: red;
+    stroke: #333;
+}
+
+svg text {
+    pointer-events: none;
+}
+
+svg .municipality {
+    fill: #191919;
+    stroke: #a1a1a1;
+}
+
+svg .municipality-label {
+    fill: #3abb56;
+    font-size: 12px;
+    font-weight: 300;
+    text-anchor: middle;
+}
+
+svg #map text {
+    color: #333;
+    font-size: 10px;
+    text-anchor: middle;
+}
+
+svg #places text {
+    color: #207740;
+    font: 10px sans-serif;
+    text-anchor: start;
+}
+
+svg line {
+    stroke: #fbfbfb;
+    stroke-width: 2px;
+}
