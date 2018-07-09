@@ -15,21 +15,26 @@
     var FIELD_CANVAS_ID = "#field-canvas";
     var OVERLAY_CANVAS_ID = "#overlay-canvas";
 
+    // korea atmosphere environmental standard
+    // http://www.me.go.kr/mamo/web/index.do?menuId=586
+    // one hour averaged
     var OVERLAY_TYPES = {
         "temperature": {min: -10,   max: 35,    scale: "line", precision: 1, label: "기온 Temperature", unit: "ºC"},
         "humidity":  {min: 0,     max: 100,   scale: "line", precision: 1, label: "습도 Humidity", unit: "%"},
         //"wv":   {min: 1,     max: 20,    scale: "log",  precision: 1, label: "風速 Wind Velocity", unit: " m/s"},
         //"in":   {min: 0.1,   max: 4.0,   scale: "log",  precision: 2, label: "日射量 Insolation", unit: ' MJ/m<span class="sup">2</span>'},
         //"no":   {min: 0.001, max: 0.600, scale: "log",  precision: 0, label: "一酸化窒素 Nitric Monoxide", unit: " ppb", multiplier: 1000},
-        "no2":  {min: 0.001, max: 0.200, scale: "log",  precision: 0, label: "二酸化窒素 Nitrogen Dioxide", unit: " ppb", multiplier: 1000},
+        "no2":  {min: 0.001, max: 0.1, scale: "log",  precision: 0, label: "이산화질소 Nitrogen Dioxide", unit: " ppb", multiplier: 1000},
         //"nox":  {min: 0.001, max: 0.600, scale: "log",  precision: 0, label: "窒素酸化物 Nitrogen Oxides", unit: " ppb", multiplier: 1000},
         //"ox":   {min: 0.001, max: 0.250, scale: "log",  precision: 0, label: "光化学オキシダント Photochemical Oxidants", unit: " ppb", multiplier: 1000},
-        "so2":  {min: 0.001, max: 0.210, scale: "log",  precision: 0, label: "이산화황 Sulfur Dioxide", unit: " ppb", multiplier: 1000},
-        "co":   {min: 0.1,   max: 9.0,   scale: "log",  precision: 1, label: "일산화탄소 Carbon Monoxide", unit: " ppm"},
+        "o3":   {min: 0.001,   max: 0.1,   scale: "log",  precision: 1, label: "오존 Ozone", unit: " ppm"},
+        "so2":  {min: 0.001, max: 0.15, scale: "log",  precision: 0, label: "이산화황 Sulfur Dioxide", unit: " ppb", multiplier: 1000},
+        "co":   {min: 0.1,   max: 25,   scale: "log",  precision: 1, label: "일산화탄소 Carbon Monoxide", unit: " ppm"},
         //"ch4":  {min: 1.5,   max: 3.0,   scale: "log",  precision: 2, label: "メタン Methane", unit: " ppm"},
         //"nmhc": {min: 0.01,  max: 1.30,  scale: "log",  precision: 2, label: "非メタン炭化水素 Non-Methane Hydrocarbons", unit: " ppm"},
         //"spm":  {min: 1,     max: 750,   scale: "log",  precision: 0, label: "浮遊粒子状物質 Suspended Particulate Matter", unit: ' μg/m<span class="sup">3</span>'},
-        "pm25": {min: 1,     max: 200,   scale: "log",  precision: 0, label: "미세먼지 2.5µm Particulate Matter", unit: ' μg/m<span class="sup">3</span>'}
+        "pm25": {min: 1,     max: 50,   scale: "log",  precision: 0, label: "미세먼지 2.5µm Particulate Matter", unit: ' μg/m<span class="sup">3</span>'},
+        "pm10": {min: 1,     max: 100,   scale: "log",  precision: 0, label: "미세먼지 10µm Particulate Matter", unit: ' μg/m<span class="sup">3</span>'}
     };
 
 
