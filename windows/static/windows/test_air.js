@@ -16,8 +16,8 @@
     var OVERLAY_CANVAS_ID = "#overlay-canvas";
 
     var OVERLAY_TYPES = {
-        "temp": {min: -10,   max: 35,    scale: "line", precision: 1, label: "기온 Temperature", unit: "ºC"},
-        "hum":  {min: 0,     max: 100,   scale: "line", precision: 1, label: "습도 Humidity", unit: "%"},
+        "temperature": {min: -10,   max: 35,    scale: "line", precision: 1, label: "기온 Temperature", unit: "ºC"},
+        "humidity":  {min: 0,     max: 100,   scale: "line", precision: 1, label: "습도 Humidity", unit: "%"},
         //"wv":   {min: 1,     max: 20,    scale: "log",  precision: 1, label: "風速 Wind Velocity", unit: " m/s"},
         //"in":   {min: 0.1,   max: 4.0,   scale: "log",  precision: 2, label: "日射量 Insolation", unit: ' MJ/m<span class="sup">2</span>'},
         //"no":   {min: 0.001, max: 0.600, scale: "log",  precision: 0, label: "一酸化窒素 Nitric Monoxide", unit: " ppb", multiplier: 1000},
@@ -65,7 +65,7 @@
         function addNavToSampleType(type) {
             d3.select("#" + type).on("click", function() {
                 document.getElementById("display").setAttribute("data-type", type);
-                document.getElementById("display").setAttribute("data-samples", "/data/current/" + type);
+                document.getElementById("display").setAttribute("data-samples", "/data/current/");
                 window.location.replace("/map/current/" + type);
             });
         }
