@@ -35,6 +35,6 @@ This site and github focuses the needs.
  - Web framework : [django 2.0](https://www.djangoproject.com)
  - javascripts
     - [D3] (https://d3js.org/)
-    - [when.js] (https://github.com/cujojs/when)
-    - topojson.js
-    - jquery.js
+    - [when] (https://github.com/cujojs/when)
+    - [topojson] (https://github.com/topojson/topojson)
+    - [jquery] (https://jquery.com/)
