@@ -13,8 +13,7 @@ This site and github focuses the needs.
 <img src="https://raw.githubusercontent.com/akahard2dj/SeoulWind/master/image/SeoulWind_Page.png">
 
 ### Overlay
- - Wind, PM<sub>2.5</sub>, PM~10~, SO~2~, NO~2~, O~3~, CO, Temperature, Humidity
-
+ - Wind, PM<sub>2.5</sub>, PM<sub>10</sub>, SO<sub>2</sub>, NO<sub>2</sub>, O<sub>3</sub>, CO, Temperature, Humidity
 ### Inspiration
  - [HINT.FM wind map](http://hint.fm/wind/)
  - [東京風速](https://air.nullschool.net/)
