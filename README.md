@@ -31,9 +31,10 @@ This site and github focuses the needs.
   
 ### Modules
  - DB Engine : SQLite3
- - Web Server Language : Python 3.5
+ - Compiler : Python 3.5
  - Web framework : [django 2.0](https://www.djangoproject.com)
- - [D3](https://d3js.org/)
- - when.js
- - topojson.js
- - jquery.js
+ - javascripts
+  - [D3](https://d3js.org/)
+  - when.js
+  - topojson.js
+  - jquery.js
