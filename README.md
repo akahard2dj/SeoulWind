@@ -20,10 +20,10 @@ This site and github focuses the needs.
  - [東京風速](https://air.nullschool.net/)
  
 ### Air Data
- - [서울 열린데이터 광장](http://data.seoul.go.kr)
- 
-    - 서울시 관측소별 실시간 기상관측 현황
-    - 서울시 실시간 자치구별 대기환경 현황
+ - [서울 열린데이터 광장](http://data.seoul.go.kr/)
+ - [서울시 대기환경 정보](http://cleanair.seoul.go.kr/)
+ - [서울시 자동기상관측시스템](http://aws.seoul.go.kr/)
+    
   
 ### Map Data
  - [seoul-maps](https://github.com/southkorea/seoul-maps)
