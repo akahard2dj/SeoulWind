@@ -4,7 +4,7 @@ It is designed for the [infographic](https://en.wikipedia.org/wiki/Infographic) 
 
 In now days, we are very interested in air quality due to air pollution.
  
-weather cast only shows a number of a wind speed, index of find dust.
+weather cast only shows a number of a wind speed, index of fine dust.
 
 We are really want to know the intuitive information.
 
