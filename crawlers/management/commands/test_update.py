@@ -20,7 +20,7 @@ class Command(BaseCommand):
         for time_item in tmp[:-1]:
             current_time_str += str(time_item[:-1])
 
-        current_time_str += tmp[-1][:2]
+        current_time_str += '00'
         print(current_time_str)
 
         data_boxes = soup.find_all('td', {'valign': 'top'})
@@ -88,7 +88,7 @@ class Command(BaseCommand):
             airpoll.so2 = so2
             airpoll.save()
 
-    def handle(self, *args, **options):
+    def _merge(self):
         import itertools
         a_last = AirPollution.objects.last()
         w_last = WeatherData.objects.last()
@@ -121,9 +121,9 @@ class Command(BaseCommand):
                     # s_data.timestamp = w.timestamp
                     s_data.observatory_id = w.observatory.id
                     s_data.observatory_name = w.observatory.name
-                    #s_data.wind_direction_value = w.wind_direction_value
-                    #s_data.wind_direction_str = w.wind_direction_str
-                    #s_data.wind_speed = w.wind_speed
+                    # s_data.wind_direction_value = w.wind_direction_value
+                    # s_data.wind_direction_str = w.wind_direction_str
+                    # s_data.wind_speed = w.wind_speed
                     s_data.temperature = w.temperature
                     s_data.precipitation = w.precipitation
                     s_data.humidity = w.humidity
@@ -146,5 +146,10 @@ class Command(BaseCommand):
         to_json = list()
         for s in s_data_list:
             to_json.append(json.dumps(s.__dict__))
+
+    def handle(self, *args, **options):
+        self._air_pollution_info()
+        self._weather_info()
+
 
 
