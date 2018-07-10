@@ -19,7 +19,7 @@
     // http://www.me.go.kr/mamo/web/index.do?menuId=586
     // one hour averaged
     var OVERLAY_TYPES = {
-        "temperature": {min: -10,   max: 35,    scale: "line", precision: 1, label: "기온 Temperature", unit: "ºC"},
+        "temperature": {min: -20,   max: 60,    scale: "line", precision: 1, label: "기온 Temperature", unit: "ºC"},
         "humidity":  {min: 0,     max: 100,   scale: "line", precision: 1, label: "습도 Humidity", unit: "%"},
         //"wv":   {min: 1,     max: 20,    scale: "log",  precision: 1, label: "風速 Wind Velocity", unit: " m/s"},
         //"in":   {min: 0.1,   max: 4.0,   scale: "log",  precision: 2, label: "日射量 Insolation", unit: ' MJ/m<span class="sup">2</span>'},
@@ -288,7 +288,7 @@
         var n = view.width / 5;
         for (var i = n; i >= 0; i--) {
             g.fillStyle = asRainbowColorStyle((1 - (i / n)), 0.9);
-            g.fillRect(view.width - 10 - i, view.height - 20, 1, 10);
+            g.fillRect(view.width - 20 - i, view.height - 20, 1, 10);
         }
 
         // Draw a column by interpolating a value for each point and painting a 2x2 rectangle
