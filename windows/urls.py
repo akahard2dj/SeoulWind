@@ -5,4 +5,5 @@ urlpatterns = [
     path('', views.index),
     path('data/current/', views.get_data),
     path('map/current/<data_type>', views.redirect_page),
+    path('data/topo_json/', views.get_topo_json),
 ]
