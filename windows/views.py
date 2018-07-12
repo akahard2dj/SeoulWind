@@ -44,20 +44,53 @@ def get_json():
                 # s_data.wind_direction_value = w.wind_direction_value
                 # s_data.wind_direction_str = w.wind_direction_str
                 # s_data.wind_speed = w.wind_speed
-                s_data.temperature = w.temperature
-                s_data.precipitation = w.precipitation
-                s_data.humidity = w.humidity
+                if w.temperature == -999:
+                    break
+                else:
+                    s_data.temperature = w.temperature
+
+                if w.precipitation == -999:
+                    break
+                else:
+                    s_data.precipitation = w.precipitation
+
+                if w.humidity == -999:
+                    break
+                else:
+                    s_data.humidity = w.humidity
+
                 s_data.timestamp = a.timestamp
+
                 if a.pm10 == -999:
                     break
                 else:
                     s_data.pm10 = a.pm10
 
-                s_data.pm25 = a.pm25
-                s_data.o3 = a.o3
-                s_data.no2 = a.no2
-                s_data.co = a.co
-                s_data.so2 = a.so2
+                if a.pm25 == -999:
+                    break
+                else:
+                    s_data.pm25 = a.pm25
+
+                if a.o3 == -999:
+                    break
+                else:
+                    s_data.o3 = a.o3
+
+                if a.no2 == -999:
+                    break
+                else:
+                    s_data.no2 = a.no2
+
+                if a.co == -999:
+                    break
+                else:
+                    s_data.co = a.co
+
+                if a.so2 == -999:
+                    break
+                else:
+                    s_data.so2 = a.so2
+
                 s_data.coordinates = [w.observatory.lng, w.observatory.lat]
                 s_data.wind = [w.wind_direction_value, w.wind_speed]
                 s_data_list.append(s_data)
