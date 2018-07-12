@@ -1,4 +1,4 @@
-(require(["when", "jquery", "d3", "topojson", "/static/windows/mvi.js"], function() {
+(require(["when", "jquery", "d3", "topojson", "https://storage.googleapis.com/seoulwind/static/windows/mvi.js"], function() {
     "use strict";
 
     var tau = 2 * Math.PI;
