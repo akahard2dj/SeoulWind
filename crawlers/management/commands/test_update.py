@@ -21,8 +21,7 @@ class Command(BaseCommand):
             current_time_str += str(time_item[:-1])
 
         current_time_str += '00'
-        print(current_time_str)
-
+        # print(current_time_str)
         data_boxes = soup.find_all('td', {'valign': 'top'})
         aws_seoul_items = data_boxes[0].find_all('tr', {'valign': 'top'})
         for aws_seoul in aws_seoul_items[1:]:
@@ -38,7 +37,7 @@ class Command(BaseCommand):
             hum = spot_data[8].text.strip() if spot_data[8].text.strip() != '-' else -999.0
             sol_rad = spot_data[9].text.strip()
             sunshine = spot_data[10].text.strip()
-            #print(name, wind_dir_str, wind_speed, temp, preci, rain, hum, sol_rad, sunshine)
+            # print(name, wind_dir_str, wind_speed, temp, preci, rain, hum, sol_rad, sunshine)
 
             observatory = Observatory.objects.filter(aws_type_name='서울시청AWS').get(name=name)
 
@@ -86,6 +85,7 @@ class Command(BaseCommand):
             airpoll.no2 = no2
             airpoll.co = co
             airpoll.so2 = so2
+
             airpoll.save()
 
     def _merge(self):
