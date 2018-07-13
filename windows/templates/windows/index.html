@@ -3,6 +3,10 @@
 <head>
     <meta charset="utf-8"/>
     <title>서울 바람</title>
+    <meta itemprop="name" property="og:title" content="서울바람"/>
+    <meta name="description" itemprop="description" property="og:description" content="Seoul Weather/AirPollution Information"/>
+    <meta name="author" itemprop="author" content="Dowon Yi"/>
+
 
     <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/seoulwind/static/windows/test_air.css"/>
 </head>
@@ -30,7 +34,17 @@
             <span class="text-button" id="co">CO<span class="sub">2</span></span><span> / </span>
             <span class="text-button" id="temperature">Temp</span><span> / </span>
             <span class="text-button" id="humidity">Hum</span><span> / </span>
-            <p></p>
+        </div>
+        <div id="about">
+            <h1>About</h1>
+            <p>Air Data |
+                <a href="http://cleanair.seoul.go.kr/">서울시 대기환경 정보</a>, 
+                <a href="http://aws.seoul.go.kr/">서울시 자동기상관측시스템</a></p>
+            <p>Map Data | <a href="https://github.com/southkorea/seoul-maps">seoul-maps</a></p>
+            <p>Source | <a href="https://github.com/akahard2dj/SeoulWind">github.com/akahard2dj/SeoulWind</a></p>
+            <p>Inspiration |
+                <a href="http://hint.fm/wind/">HINT.FM wind map</a>,
+                <a href="https://air.nullschool.net/">東京風速</a></p>
         </div>
     </div>
 
