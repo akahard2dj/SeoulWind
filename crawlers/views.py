@@ -49,11 +49,7 @@ def _weather_info():
         wea_data.humidity = hum
         wea_data.observatory = observatory
 
-        check_query = WeatherData.objects.last()
-        if check_query.timestamp == wea_data.timestamp:
-            break
-        else:
-            wea_data.save()
+        wea_data.save()
 
 
 def _air_pollution_info():
@@ -89,11 +85,7 @@ def _air_pollution_info():
         airpoll.co = co
         airpoll.so2 = so2
 
-        check_query = AirPollution.objects.last()
-        if check_query.timestamp == airpoll.timestamp:
-            break
-        else:
-            airpoll.save()
+        airpoll.save()
 
 
 def update_data(request: HttpRequest):
