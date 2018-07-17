@@ -33,8 +33,8 @@
         //"ch4":  {min: 1.5,   max: 3.0,   scale: "log",  precision: 2, label: "メタン Methane", unit: " ppm"},
         //"nmhc": {min: 0.01,  max: 1.30,  scale: "log",  precision: 2, label: "非メタン炭化水素 Non-Methane Hydrocarbons", unit: " ppm"},
         //"spm":  {min: 1,     max: 750,   scale: "log",  precision: 0, label: "浮遊粒子状物質 Suspended Particulate Matter", unit: ' μg/m<span class="sup">3</span>'},
-        "pm25": {min: 1,     max: 50,   scale: "log",  precision: 0, label: "미세먼지 2.5µm Particulate Matter", unit: ' μg/m<span class="sup">3</span>'},
-        "pm10": {min: 1,     max: 100,   scale: "log",  precision: 0, label: "미세먼지 10µm Particulate Matter", unit: ' μg/m<span class="sup">3</span>'}
+        "pm25": {min: 1,     max: 50,   scale: "line",  precision: 0, label: "미세먼지 2.5µm Particulate Matter", unit: ' μg/m<span class="sup">3</span>'},
+        "pm10": {min: 1,     max: 100,   scale: "line",  precision: 0, label: "미세먼지 10µm Particulate Matter", unit: ' μg/m<span class="sup">3</span>'}
     };
 
 
