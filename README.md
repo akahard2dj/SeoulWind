@@ -29,7 +29,7 @@ This site and github focuses the needs.
  
   
 ### Modules
- - DB Engine : SQLite3
+ - DB Engine : PostgreSQL
  - Compiler : Python 3.5
  - Web framework : [django 2.0](https://www.djangoproject.com)
  - javascripts
