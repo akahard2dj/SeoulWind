@@ -33,7 +33,7 @@ This site and github focuses the needs.
  - Compiler : Python 3.5
  - Web framework : [django 2.0](https://www.djangoproject.com)
  - javascripts
-    - [D3] (https://d3js.org/)
-    - [when] (https://github.com/cujojs/when)
-    - [topojson] (https://github.com/topojson/topojson)
-    - [jquery] (https://jquery.com/)
+    - [D3](https://d3js.org/)
+    - [when](https://github.com/cujojs/when)
+    - [topojson](https://github.com/topojson/topojson)
+    - [jquery](https://jquery.com/)
