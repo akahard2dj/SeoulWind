@@ -1,4 +1,4 @@
-# SeoulWind (https://seoulwind-001.appspot.com/)
+# SeoulWind
 
 It is designed for the [infographic](https://en.wikipedia.org/wiki/Infographic) of Seoul air quality.
 
